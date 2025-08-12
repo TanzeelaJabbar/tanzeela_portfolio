@@ -1,14 +1,4 @@
-/* page.module.css */
-.imageBox {
-  position: relative; /* important for next/image fill */
-  width: 100%;
-  height: 100%; /* or any height you want */
-  object-fit: fill;
-}
-/* .imageBox .userImage {
-  width: unset !important;
-  left: unset !important;
-} */
+
 
 .heroSection {
   height: 100vh;
@@ -18,30 +8,78 @@
   z-index: 0;
 }
 
+.imageBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .imageBox::after {
   content: "";
-  background: url("/app-images/bg.png") center/contain no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  background: url("/app-images/bg.png") center/cover no-repeat;
+  position: absolute;
   top: 0;
   right: 0;
-  position: absolute;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
+
 .imageBox::before {
   content: "";
-  background: url("/app-images/circle2.png") center/contain no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("/app-images/circle2.png") center/cover no-repeat;
   width: 612px;
   height: 480px;
   position: absolute;
-  top: 109px;
+  top: 109px; /* matches your Figma spacing */
   left: -28px;
-  position: absolute;
-  z-index: 9999;
+  z-index: 2;
 }
+
+/* Cartoon image behind the circle */
+.cartoonImage {
+  position: absolute;
+  width: 500px;    /* adjust to match Figma proportions */
+  height: auto;
+  top: 150px;      /* aligns with circle center in Figma */
+  left: 40px;      /* positions inside the circle */
+  z-index: 1;      /* behind circle but above bg */
+}
+
+.orbit {
+  position: absolute;
+  top: 150px;  /* same as your cartoonImage top */
+  left: 40px;  /* aligns with your circle */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation: rotateOrbit 20s linear infinite;
+  z-index: 3; /* above cartoon */
+}
+
+.logo {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+}
+
+/* Position logos manually around the circle */
+.logo:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, 0); }
+.logo:nth-child(2) { top: 50%; right: 0; transform: translate(0, -50%); }
+.logo:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 0); }
+.logo:nth-child(4) { top: 50%; left: 0; transform: translate(0, -50%); }
+.logo:nth-child(5) { top: 10%; left: 10%; } /* adjust as needed */
+
+/* Orbit animation */
+@keyframes rotateOrbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* .logo {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+} */
