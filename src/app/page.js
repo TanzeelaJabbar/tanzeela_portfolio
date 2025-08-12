@@ -34,14 +34,13 @@ export default function Home() {
                     alt="CSS3"
                     className={classes.logo}
                   />
-                  <img src="/logos/js.svg" alt="JS" className={classes.logo} />
                   <img
-                    src="/logos/nodejs.svg"
+                    src="/app-images/node-js.svg"
                     alt="Node.js"
                     className={classes.logo}
                   />
                   <img
-                    src="/logos/figma.svg"
+                    src="/app-images/html-logo.svg"
                     alt="Figma"
                     className={classes.logo}
                   />
