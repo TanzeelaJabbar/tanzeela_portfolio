@@ -8,8 +8,7 @@
   padding-left: 91px;
   align-items: center;
   /* align-items: center;
-  justify-content: center; */
-  /* background: linear-gradient(135deg, #000000 0%, #1A0E05 50%, #782f06 100%); */
+
 
   /* Blend them */
   background-blend-mode: overlay;
@@ -62,6 +61,7 @@
   height: 90px;
   overflow: hidden;
   line-height: 90px;
+  padding-left: unset;
 }
 
 .staticText li {
@@ -100,6 +100,5 @@
     top: -270px; /* 90px × (3 items - 1) */
   }
 }
-
 
 

@@ -2,6 +2,7 @@
 import React from "react";
 import classes from "./BannerSection.module.css";
 import { titles } from "@/developmentContext/appData";
+import Image from "next/image";
 
 export default function Banner() {
   return (
@@ -20,9 +21,6 @@ export default function Banner() {
         <p className={classes.description}>
           I build modern, interactive, and scalable web experiences.
         </p>
-        <a href="#projects" className={classes.cta}>
-          View My Work
-        </a>
       </div>
     </div>
   );

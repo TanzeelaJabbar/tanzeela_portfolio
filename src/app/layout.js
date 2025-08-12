@@ -1,8 +1,10 @@
 import { Geist, Geist_Mono , Outfit } from "next/font/google";
-import "../app/css/globals.css";
-import "../app/css/color.css";
-import "../app/css/pixelsize.css";
-import "../app/css/typography.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/globals.css";
+import "./css//color.css";
+import "./css/pixelsize.css";
+import "./css/typography.css";
+
 import Sidebar from "@/components/organisms/SideBar";
 
 const geistSans = Geist({
