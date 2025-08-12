@@ -1,6 +1,7 @@
-'use client';
-import React from 'react';
-import classes from './BannerSection.module.css';
+"use client";
+import React from "react";
+import classes from "./BannerSection.module.css";
+import { titles } from "@/developmentContext/appData";
 
 export default function Banner() {
   return (
@@ -9,9 +10,13 @@ export default function Banner() {
         <h1 className={classes.heading}>
           Hi, I’m <span className={classes.highlight}>Tanzeela Jabbar</span>
         </h1>
-        <p className={classes.subheading}>
-          Frontend Developer | React.js | Next.js
-        </p>
+        <div className={classes.textWrapper}>
+          <ul className={classes.staticText}>
+            {titles.map((item, index) => (
+              <li key={index}>{item.title}</li>
+            ))}
+          </ul>
+        </div>
         <p className={classes.description}>
           I build modern, interactive, and scalable web experiences.
         </p>

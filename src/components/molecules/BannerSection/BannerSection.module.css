@@ -6,11 +6,10 @@
   min-height: 100vh;
   display: flex;
   padding-left: 91px;
-    align-items: center;
+  align-items: center;
   /* align-items: center;
   justify-content: center; */
   /* background: linear-gradient(135deg, #000000 0%, #1A0E05 50%, #782f06 100%); */
-
 
   /* Blend them */
   background-blend-mode: overlay;
@@ -19,12 +18,6 @@
   background-repeat: no-repeat;
   color: var(--color-text);
 }
-
-/* .content {
-  max-width: 900px;
-  text-align: center;
-  padding: 0 1.5rem;
-} */
 
 .heading {
   font-weight: bold;
@@ -60,3 +53,53 @@
 .cta:hover {
   background: var(--color-accent-hover);
 }
+
+.textWrapper {
+  display: flex;
+}
+
+.staticText {
+  height: 90px;
+  overflow: hidden;
+  line-height: 90px;
+}
+
+.staticText li {
+  list-style: none;
+  position: relative;
+  font-size: var(--fs75);
+  font-family: var(--font-outfit);
+  top: 0;
+  animation: slides 9s steps(3) infinite;
+}
+
+.staticText li::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid var(--color-primary);
+  animation: typing 3s steps(18) infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* slide change */
+@keyframes slides {
+  100% {
+    top: -270px; /* 90px × (3 items - 1) */
+  }
+}
+
+
+
