@@ -21,6 +21,7 @@
 .heading {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 .highlight {
@@ -29,13 +30,14 @@
 
 .subheading {
   font-size: var(--heading-md);
-  color: var(--color-muted);
+  color: white;
   margin-bottom: 1rem;
 }
 
 .description {
   font-size: var(--body-lg);
   margin-bottom: 2rem;
+  color: white;
 }
 
 .cta {
@@ -67,7 +69,7 @@
 .staticText li {
   list-style: none;
   position: relative;
-  font-size: var(--fs75);
+  font-size: var(--fs60);
   font-family: var(--font-outfit);
   top: 0;
   animation: slides 9s steps(3) infinite;

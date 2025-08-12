@@ -25,7 +25,7 @@ export default function Home() {
                 {/* Orbit container */}
                 <div className={classes.orbit}>
                   <img
-                    src="/app-images/figma.png"
+                    src="/app-images/figma.svg"
                     alt="HTML5"
                     className={classes.logo}
                   />
