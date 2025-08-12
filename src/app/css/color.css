@@ -1,0 +1,32 @@
+:root {
+    /* Primary Colors */
+    --color-primary: #FC530A; /* Bright orange (buttons, highlights) */
+    --color-primary-dark: #C88313; /* Deep orange */
+    --color-accent-green: #81CD39;
+    --color-accent-blue: #0277BD;
+    --color-accent-cyan: #0ACF83;
+    --color-accent-lightblue: #1ABCEF;
+    --color-accent-purple: #A259FF;
+    
+    /* Secondary Colors */
+    --color-dark: #000000;
+    --color-grey-light: #BEBEBB;
+    --color-grey-dark: #242938;
+  
+    /* Extra Accent Colors */
+    --color-orange-light: #E44F26;
+    --color-orange-dark: #F1682A;
+    --color-orange-extra: #F24E1E;
+    --color-orange-red: #FF7262;
+    
+    /* White Variations */
+    --color-white: #FFFFFF;
+    --color-white-30: rgba(255, 255, 255, 0.3);
+    --color-white-50: rgba(255, 255, 255, 0.5);
+    --color-white-60: rgba(255, 255, 255, 0.6);
+    --color-white-70: rgba(255, 255, 255, 0.7);
+    --color-white-80: rgba(255, 255, 255, 0.8);
+    --color-white-10: rgba(255, 255, 255, 0.1);
+    --color-white-16: rgba(255, 255, 255, 0.16);
+  }
+  

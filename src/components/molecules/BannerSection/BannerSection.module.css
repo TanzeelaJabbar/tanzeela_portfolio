@@ -1,0 +1,61 @@
+/* BannerSection.module.css */
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #000000 0%, #1A0E05 50%, #782f06 100%);
+
+
+  /* Blend them */
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text);
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.heading {
+  font-size: var(--heading-xl);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+.subheading {
+  font-size: var(--heading-md);
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: var(--body-lg);
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--color-accent-hover);
+}
