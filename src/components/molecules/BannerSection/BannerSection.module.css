@@ -71,12 +71,13 @@
   font-family: var(--font-outfit);
   top: 0;
   animation: slides 9s steps(3) infinite;
+  color: white;
 }
 
 .staticText li::after {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: black;
   left: 0;
   height: 100%;
   width: 100%;

@@ -9,10 +9,10 @@ export default function Home() {
       <div className={classes.heroSection}>
       <Container fluid>
         <Row>
-          <Col md={8}>
+          <Col md={7}>
             <Banner />
           </Col>
-          <Col md={4} className="p-0">
+          <Col md={5} className="p-0">
             <div className={classes.imageBox}>
               <Image
                 src="/app-images/users.svg"

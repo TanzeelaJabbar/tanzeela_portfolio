@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100vh;
-  background: var(--color-dark);
+  background:transparent;
   color: white;
   width: fit-content;
   padding-top: 40px;
