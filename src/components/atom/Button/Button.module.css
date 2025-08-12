@@ -1,0 +1,39 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.base:active {
+  transform: scale(0.95);
+}
+
+.orange {
+  background-color: #ff7f50;
+  color: white;
+}
+
+.orange:hover {
+  background-color: #e06f44;
+}
+
+.black {
+  background-color: #000;
+  color: white;
+}
+
+.black:hover {
+  background-color: #222;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}

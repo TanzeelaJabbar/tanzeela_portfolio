@@ -3,6 +3,8 @@ import React from "react";
 import classes from "./BannerSection.module.css";
 import { titles } from "@/developmentContext/appData";
 import Image from "next/image";
+import Button from "@/components/atom/Button";
+import { MdCloudDownload } from "react-icons/md";
 
 export default function Banner() {
   return (
@@ -21,6 +23,9 @@ export default function Banner() {
         <p className={classes.description}>
           I build modern, interactive, and scalable web experiences.
         </p>
+        <a href="/app-images/resume.pdf" download>
+          <Button label="Download Resume" leftIcon={<MdCloudDownload />} />
+        </a>
       </div>
     </div>
   );
