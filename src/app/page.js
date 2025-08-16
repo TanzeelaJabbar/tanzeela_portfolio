@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Banner from "@/components/molecules/BannerSection";
 import AboutUsSection from "@/components/molecules/AboutUsSection";
 import clsx from "clsx";
+import WorksSection from "@/components/molecules/WorksSection";
 
 export default function Home() {
   return (
@@ -57,6 +58,15 @@ export default function Home() {
           <Row className="justify-content-center align-items-center">
             <Col xs={12}>
               <AboutUsSection />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className={classes.skillsSection}>
+        <Container>
+          <Row className="justify-content-center align-items-center">
+            <Col xs={12}>
+              <WorksSection />
             </Col>
           </Row>
         </Container>

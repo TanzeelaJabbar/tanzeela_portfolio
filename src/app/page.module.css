@@ -106,13 +106,13 @@
   100% { transform: rotate(-360deg); }
 } */
 
-.aboutSection {
+.aboutSection , .skillsSection {
   /* background: linear-gradient(135deg, var(--color-grey-dark) 0%, var(--color-dark) 100%); */
   background-color: var(--color-dark);
   position: relative;
 }
 .aboutSection::before,
-.heroSection::before {
+.heroSection::before , .skillsSection::before {
   content: "";
   position: absolute;
   top: 0;
