@@ -2,6 +2,7 @@ import Image from "next/image";
 import classes from "./page.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "@/components/molecules/BannerSection";
+import AboutUsSection from "@/components/molecules/AboutUsSection";
 
 export default function Home() {
   return (
@@ -46,6 +47,15 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className={classes.aboutSection}>
+        <Container>
+          <Row className="justify-content-center align-items-center">
+            <Col xs={12}>
+              <AboutUsSection />
             </Col>
           </Row>
         </Container>
