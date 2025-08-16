@@ -10,6 +10,13 @@
     --fs18:18px;
     --fs16:16px;
 
+    /* Rem-based font sizes (similar to about us section) */
+    --fs-3rem: 3rem;    /* 48px - Default large heading */
+    --fs-2-5rem: 2.5rem; /* 40px - Medium large heading */
+    --fs-2rem: 2rem;     /* 32px - Medium heading */
+    --fs-1-5rem: 1.5rem; /* 24px - Small heading */
+    --fs-1-2rem: 1.2rem; /* 19.2px - Very small heading */
+
     /* Responsive Font Sizes for Animation Text */
     --fs-anim-xl: 60px;  /* Extra large screens */
     --fs-anim-lg: 45px;  /* Large screens */
