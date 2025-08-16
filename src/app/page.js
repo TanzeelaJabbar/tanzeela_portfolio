@@ -3,6 +3,7 @@ import classes from "./page.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "@/components/molecules/BannerSection";
 import AboutUsSection from "@/components/molecules/AboutUsSection";
+import clsx from "clsx";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
             <Col md={7}>
               <Banner />
             </Col>
-            <Col md={5} className="p-0">
+            <Col md={5} className="p-0 d-none d-md-block">
               <div className={classes.imageBox}>
                 <Image
                   src="/app-images/users.svg"

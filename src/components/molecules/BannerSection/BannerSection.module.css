@@ -5,12 +5,8 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
-  padding-left: 91px;
+  padding-left: var(--p91);
   align-items: center;
-  /* align-items: center;
-
-
-  /* Blend them */
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -22,6 +18,7 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: white;
+  font-size: var(--fs40);
 }
 
 .highlight {
@@ -60,16 +57,16 @@
 }
 
 .staticText {
-  height: 90px;
+  height: var(--anim-height-xl);
   overflow: hidden;
-  line-height: 90px;
+  line-height: var(--anim-height-xl);
   padding-left: unset;
 }
 
 .staticText li {
   list-style: none;
   position: relative;
-  font-size: var(--fs60);
+  font-size: var(--fs-anim-xl);
   font-family: var(--font-outfit);
   top: 0;
   animation: slides 9s steps(3) infinite;
@@ -100,8 +97,153 @@
 /* slide change */
 @keyframes slides {
   100% {
-    top: -270px; /* 90px × (3 items - 1) */
+    top: calc(var(--anim-height-xl) * -3); /* height × (3 items - 1) */
   }
 }
 
+/* Responsive Design using pixelsize variables */
 
+/* Large tablets and small desktops (992px and down) */
+@media (max-width: 992px) {
+  .banner {
+    padding-left: var(--p40);
+    padding-right: var(--p20);
+  }
+
+  .heading {
+    font-size: var(--fs32);
+  }
+
+  .staticText {
+    height: var(--anim-height-lg);
+    line-height: var(--anim-height-lg);
+  }
+
+  .staticText li {
+    font-size: var(--fs-anim-lg);
+  }
+
+  @keyframes slides {
+    100% {
+      top: calc(var(--anim-height-lg) * -3);
+    }
+  }
+}
+
+/* Tablets (768px and down) */
+@media (max-width: 768px) {
+  .banner {
+    padding-left: var(--p20);
+    padding-right: var(--p20);
+    min-height: 80vh;
+    /* text-align: center; */
+  }
+
+  .heading {
+    font-size: var(--fs28);
+    margin-bottom: 1rem;
+  }
+
+  .staticText {
+    height: var(--anim-height-md);
+    line-height: var(--anim-height-md);
+    justify-content: center;
+  }
+
+  .staticText li {
+    font-size: var(--fs-anim-md);
+  }
+
+  .description {
+    font-size: var(--body-md);
+    margin-bottom: 1.5rem;
+  }
+
+  @keyframes slides {
+    100% {
+      top: calc(var(--anim-height-md) * -3);
+    }
+  }
+}
+
+/* Mobile devices (576px and down) */
+@media (max-width: 576px) {
+  .banner {
+    padding-left: var(--p15);
+    padding-right: var(--p15);
+    min-height: 70vh;
+  }
+
+  .heading {
+    font-size: var(--fs24);
+    line-height: 1.3;
+  }
+
+  .staticText {
+    height: var(--anim-height-sm);
+    line-height: var(--anim-height-sm);
+  }
+
+  .staticText li {
+    font-size: var(--fs-anim-sm);
+  }
+
+  .description {
+    font-size: var(--body-sm);
+    margin-bottom: 1.5rem;
+  }
+
+  @keyframes slides {
+    100% {
+      top: calc(var(--anim-height-sm) * -3);
+    }
+  }
+}
+
+/* Extra small devices (480px and down) */
+@media (max-width: 480px) {
+  .banner {
+    padding-left: var(--p10);
+    padding-right: var(--p10);
+    min-height: 60vh;
+  }
+
+  .heading {
+    font-size: var(--fs20);
+  }
+
+  .staticText {
+    height: var(--anim-height-xs);
+    line-height: var(--anim-height-xs);
+  }
+
+  .staticText li {
+    font-size: var(--fs-anim-xs);
+  }
+
+  .description {
+    font-size: var(--body-xs);
+  }
+
+  @keyframes slides {
+    100% {
+      top: calc(var(--anim-height-xs) * -3);
+    }
+  }
+}
+
+/* Very small devices (360px and down) */
+@media (max-width: 360px) {
+  .banner {
+    padding-left: var(--p8);
+    padding-right: var(--p8);
+  }
+
+  .heading {
+    font-size: var(--fs18);
+  }
+
+  .staticText li {
+    font-size: var(--fs-anim-xxs);
+  }
+}

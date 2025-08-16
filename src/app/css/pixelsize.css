@@ -1,10 +1,48 @@
 :root{
+    /* Font Sizes */
     --fs75:75px;
     --fs60:60px;
     --fs40:40px;
     --fs32:32px;
+    --fs28:28px;
+    --fs24:24px;
+    --fs20:20px;
+    --fs18:18px;
+    --fs16:16px;
 
+    /* Responsive Font Sizes for Animation Text */
+    --fs-anim-xl: 60px;  /* Extra large screens */
+    --fs-anim-lg: 45px;  /* Large screens */
+    --fs-anim-md: 35px;  /* Medium screens */
+    --fs-anim-sm: 28px;  /* Small screens */
+    --fs-anim-xs: 22px;  /* Extra small screens */
+    --fs-anim-xxs: 18px; /* Very small screens */
 
-    --p20:20px;
-    --p60:60px;
+    /* Animation Heights */
+    --anim-height-xl: 90px;
+    --anim-height-lg: 70px;
+    --anim-height-md: 60px;
+    --anim-height-sm: 50px;
+    --anim-height-xs: 40px;
+
+    /* Padding and Margins */
+    --p91: 91px;
+    --p60: 60px;
+    --p40: 40px;
+    --p20: 20px;
+    --p15: 15px;
+    --p10: 10px;
+    --p8: 8px;
+
+    /* Margins */
+    --m20: 20px;
+    --m15: 15px;
+    --m10: 10px;
+    --m8: 8px;
+
+    /* Body text sizes */
+    --body-lg: 18px;
+    --body-md: 16px;
+    --body-sm: 14px;
+    --body-xs: 12px;
 }
